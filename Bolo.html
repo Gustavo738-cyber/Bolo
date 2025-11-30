@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Como fazer um bolo simples</title>
+
+    <!-- Arquivo de estilos (CSS) -->
+    <link rel="stylesheet" href="bolostyle.css">
+
+    <!-- O script do modo escuro (bolo.js) está no final da página
+         porque assim o HTML carrega primeiro e evita erros -->
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!--         BARRA DE NAVEGAÇÃO   -->
+    <!-- ============================= -->
+    <!-- Os links usam #id para rolar até as seções -->
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#ingredientes">Ingredientes</a>
+        <a href="#preparo">Modo de Preparo</a>
+    </nav>
+
+    <!-- Botão que alterna entre Modo Claro / Modo Escuro -->
+    <button id="darkToggle">🌙 Modo Escuro</button>
+
+    <!-- Interface: caixa central onde todo conteúdo fica -->
+    <div id="interface">
+
+        <main>
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1>Como fazer o bolo simples, a base para todo tipo de bolo comum</h1>
+
+            <!-- ============================= -->
+            <!--              IMAGEM           -->
+            <!-- ============================= -->
+            <figure>
+                <!-- Imagem principal do bolo -->
+                <img src="https://s2-receitas.glbimg.com/pHI5QUycE92JGcjzVhsHVrYe9GA=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/z/z/qDeFwDSICaoW6DzwRy6A/bolo-de-nada-receita-2.jpg" 
+                     alt="Foto de um bolo simples">
+
+                <!-- Legenda da imagem -->
+                <figcaption>Bolo Simples</figcaption>
+            </figure>
+
+            <!-- ============================= -->
+            <!--              HISTÓRIA         -->
+            <!-- ============================= -->
+            <!-- Cada <section> representa um bloco temático -->
+            <section id="historia">
+                <h2>A história do Bolo</h2>
+
+                <!-- Subtítulo da parte histórica -->
+                <h3>Bolos no Egito</h3>
+                <p>Quando tudo ainda era mato, há milhares de anos atrás, atrás não burro, isso é redundância, os egípcios começaram a fazer o que se tornariam os primeiros bolos, sendo basicamente pães adoçados com mel, tâmaras, nozes, etc. Tipo um bolo fitness! Nada elaborado, afinal, o mundo ainda estava no começo. É muito engraçado que tínhamos pirâmides porém não tínhamos bolos.</p>
+
+                <h3>Bolos na Grécia e Roma Antigas</h3>
+                <p>Na Grécia Antiga os bolos começaram a ir para o caminho que conhecemos hoje, os gregos para arrumar a desculpinha e se encher de massa, vinho e cometer atos libidinosos ofereciam esses bolos aos deuses, também, quem não gosta de ganhar um bolo né.</p>
+
+                <h3>Bolos na Idade Média</h3>
+                <p>No tempo dos vassalos, dos Cavaleiros Templários, o açúcar era caro pacas, então os bolos continuavam fitness, mas já começaram a surgir os bolos de casamento, mais elaborados.</p>
+
+                <h3>A revolução Industrial</h3>
+                <p>Mas o que diabos a revolução Industrial tem a ver com bolos? Bem simples, começaram a surgir fornos, o fermento químico surgiu e o açúcar ficou barato. Logo, fazer bolos ficou bem mais fácil!</p>
+            </section>
+
+            <!-- ============================= -->
+            <!--     INGREDIENTES E MATERIAIS -->
+            <!-- ============================= -->
+            <section id="ingredientes">
+                <h2>Ingredientes e Materiais</h2>
+
+                <!-- Introdução da seção -->
+                <p>Tudo isso que você acabou de ler é só encheção de linguiça, porque a parte importante é essa, como fazer o bendito.</p>
+
+                <!-- Lista de materiais necessários -->
+                <h3>Materiais</h3>
+                <ul>
+                    <li>Forma</li>
+                    <li>Pequena vasilha</li>
+                    <li>Espátula</li>
+                    <li>Fouet</li>
+                    <li>Liquidificador</li>
+                    <li>Colher</li>
+                    <li>2 xícaras</li>
+                    <li>Air-fryer</li>
+                    <li>Bacia grande</li>
+                </ul>
+
+                <!-- Lista de ingredientes -->
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>Margarina</li>
+                    <li>1xc. Leite</li>
+                    <li>1xc. de açúcar</li>
+                    <li>2 ovos</li>
+                    <li>1 colher de sopa de fermento em pó</li>
+                    <li>Tenha ao menos 3 xícaras de farinha de trigo disponíveis</li>
+                </ul>
+            </section>
+
+            <!-- ============================= -->
+            <!--         MODO DE PREPARO      -->
+            <!-- ============================= -->
+            <section id="preparo">
+                <h2>Modo de Preparo</h2>
+
+                <!-- Lista ordenada (passo a passo) -->
+                <ol>
+                    <li>Na pequena vasilha quebre os ovos para ver se estão estragados, se não, ponha no liquidificador junto do leite, açúcar, duas colheres de margarina e bata tudo até a massa ficar homogênea.</li>
+
+                    <li>Após, despeje tudo numa bacia grande e vá pondo a farinha de pouco em pouco até formar uma consistência cremosa, nem dura, nem mole. Um modo de testar é você pôr o fouet na massa e puxar de volta, e se ficar o formato da parte de baixo do fouet mais uma pontinha quer dizer que está bom. Presumo que você perceba que se ficar duro será mais difícil de mexer a massa, e se ficar duro, uma maneira de solucionar o problema é pôr mais leite, de pouco em pouco e ver se ajeita a massa.</li>
+
+                    <li>Após, unte a forma com farinha e margarina, é aconselhável ter tipo um passador, mas se não tiver dá teus pulos. Após untar, despeje tudo dentro da forma.</li>
+
+                    <li>Ponha na sua Air-fryer a 160° por 30 min. e após os 25 já pode ir de vez em quando espetar um garfo ou faca no bolo, e se sair limpo o seu bolo está pronto.</li>
+                </ol>
+            </section>
+
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            &copy; Gustavo Porfírio Lino dos Santos
+        </footer>
+
+    </div>
+
+    <!-- Carrega o JavaScript após todo o HTML -->
+    <script src="bolo.js"></script>
+
+</body>
+</html>

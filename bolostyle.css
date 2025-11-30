@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* ============================================================
+   VARIÁVEIS DE TEMA
+   - Tudo que depende de cor deve usar VARIÁVEIS
+   - Assim o modo escuro só muda os valores uma vez
+   ============================================================ */
+:root {
+    --bg: wheat;            /* Cor de fundo padrão */
+    --card-bg: white;       /* Fundo dos cards/sections */
+    --text: #222;           /* Cor do texto no modo claro */
+    --shadow: rgba(0,0,0,0.2); /* Sombra */
+    --nav-bg: #f8e5b8;      /* Fundo do menu */
+    --nav-text: #5c3d00;    /* Texto do menu */
+}
+
+/* ============================================================
+   MODO ESCURO
+   - Quando body.dark-mode estiver ativo, esses valores substituem
+   ============================================================ */
+.dark-mode {
+    --bg: #1b1b1b;
+    --card-bg: #2a2a2a;
+    --text: #f5f5f5;
+    --shadow: rgba(0,0,0,0.6);
+    --nav-bg: #333;
+    --nav-text: #f8e5b8;
+}
+
+/* Transição suave para quando o tema muda */
+* {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ============================================================
+   ESTILO GLOBAL
+   ============================================================ */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Caixa principal do site */
+div#interface {
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+/* ============================================================
+   TÍTULOS
+   ============================================================ */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    color: var(--text);
+    text-shadow: 1px 1px 3px var(--shadow);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24pt;
+    color: var(--text);
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 19pt;
+    color: var(--text);
+}
+
+h4 {
+    color: var(--text);
+}
+
+/* ============================================================
+   TEXTOS
+   ============================================================ */
+p {
+    text-align: justify;
+    text-indent: 40px; /* Parágrafo com recuo */
+    font-size: 14pt;
+    color: var(--text);
+}
+
+li {
+    font-size: 14pt;
+    color: var(--text);
+}
+
+/* Cor do bullet dos itens da UL */
+ul li::marker {
+    color: brown;
+}
+
+/* ============================================================
+   MENU (NAV)
+   ============================================================ */
+nav {
+    text-align: center;
+    background-color: var(--nav-bg);
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--nav-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   SEÇÕES / CAIXAS DE CONTEÚDO
+   ============================================================ */
+section {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow);
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   FIGURA / IMAGEM
+   ============================================================ */
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+figure figcaption {
+    margin-top: 5px;
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* ============================================================
+   RODAPÉ
+   ============================================================ */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12pt;
+    color: var(--text);
+}
+
+/* ============================================================
+   SCROLLBAR PERSONALIZADA (Chrome / Edge)
+   ============================================================ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #caa46a;
+    border-radius: 10px;
+}
+
+/* ============================================================
+   BOTÃO MODO ESCURO
+   ============================================================ */
+#darkToggle {
+    margin: 10px auto;
+    display: block;
+    padding: 8px 20px;
+    background: var(--nav-bg);
+    color: var(--nav-text);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#darkToggle:hover {
+    filter: brightness(0.9);
+}
