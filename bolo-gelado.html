@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Bolo gelado/Toalha felpuda, como fazer</title>
+
+    <!-- Arquivo de estilos (CSS) -->
+    <link rel="stylesheet" href="bolostyle.css">
+
+    <!-- O script do modo escuro (bolo.js) está no final da página
+         porque assim o HTML carrega primeiro e evita erros -->
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!--         BARRA DE NAVEGAÇÃO   -->
+    <!-- ============================= -->
+    <!-- Os links usam #id para rolar até as seções -->
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#ingredientes">Ingredientes</a>
+        <a href="#preparo">Modo de Preparo</a>
+    </nav>
+
+    <!-- Botão que alterna entre Modo Claro / Modo Escuro -->
+    <button id="darkToggle">🌙 Modo Escuro</button>
+
+    <!-- Interface: caixa central onde todo conteúdo fica -->
+    <div id="interface">
+
+        <main>
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1>Como fazer o bolo gelado, uma maravilha da confeitaria</h1>
+
+            <!-- ============================= -->
+            <!--              IMAGEM           -->
+            <!-- ============================= -->
+            <figure>
+                <!-- Imagem principal do bolo -->
+                <img src="https://pubimg.band.com.br/files/92f6ef59c7645abc994f.png"> 
+
+                <!-- Legenda da imagem -->
+                <figcaption>Bolo gelado, ou bolo toalha felpuda</figcaption>
+            </figure>
+
+            <!-- ============================= -->
+            <!--              HISTÓRIA         -->
+            <!-- ============================= -->
+            <!-- Cada <section> representa um bloco temático -->
+            <section id="historia">
+                <h2>A história do Bolo toalha felpuda</h2>
+
+                <!-- Subtítulo da parte histórica -->
+                <h3>Muito incerta e nostálgica</h3>
+                <p>Ninguém sabe ao certo quando o bolo toalha felpuda surgiu, tanto que seu inventor é desconhecido, mas acredita-se que tenha surgido lá pelos anos 80 e 90, quando ele começou a se popularizar muito em festinhas.</p>
+                <p>O motivo de se chamar "toalha felpuda" é bem simples: o bolo utiliza uma quantia generosa de coco ralado em sua cobertura, o que faz ele parecer com um tapete felpudo branco, e é um bolo com massa fofinha e calda deliciosa, que após ser refrigerada em papel alumínio vira uma maravilha.</p>
+
+            </section>
+
+            <!-- ============================= -->
+            <!--     INGREDIENTES E MATERIAIS -->
+            <!-- ============================= -->
+            <section id="ingredientes">
+                <h2>Ingredientes e Materiais</h2>
+
+                <!-- Introdução da seção -->
+                <p>Muito bem, isso aí que você leu é só pra deixar essa página com um tamanhinho bacana, mas óbvio, nunca chegará aos pés da página do bolo de nada.</p>
+
+                <!-- Lista de ingredientes -->
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>3 colheres de sopa de margarina, ou para os burgueses, manteiga.</li>
+                    <li>1 xíc. Leite.</li>
+                    <li>2 xíc. de açúcar.</li>
+                    <li>4 ovos.</li>
+                    <li>1 colher de sopa de fermento em pó.</li>
+                    <li>Tenha ao menos 3 xícaras de farinha de trigo disponíveis.</li>
+                    <li>Falando agora da calda, 1 vidro de 200ml de leite de coco.</li>
+                    <li>1 lata de leite condensado.</li>
+                    <li>1 xíc. de leite.</li>
+                    <li>(se quiser) Uma colher de sopa de essência de baunilha.</li>
+                    <li>Para finalizar, coco ralado, mas muito coco mesmo, sem dó.</li>
+                </ul>
+            </section>
+
+            <!-- ============================= -->
+            <!--         MODO DE PREPARO      -->
+            <!-- ============================= -->
+            <section id="preparo">
+                <h2>Modo de Preparo</h2>
+
+                <!-- Lista ordenada (passo a passo) -->
+                <ol>
+                    <li>Bata os ovos, o acúcar e a margarina até ficar uma massa clara e fofinha</li>
+
+                    <li>Adicione o leite e misture.</li>
+
+                    <li>Coloque farinha aos poucos até ficar uma massa uniforme, nem dura nem mole. Se por acaso ficar dura, ponha mais leite.</li>
+
+                    <li>Para a calda, misturaremos o leite de coco, o leite condensado, o leite e a baunilha, mexa bem, e não esquente, afinal é bolo-gelado.</li>
+                    <li>Aí você leva ao forno a 180 graus por 35-40 minutos, ou até que passe no teste do garfo, que é basicamente espetar o garfo e ele sair limpo.</li>
+                    <li>Para a montagem, com o bolo ainda quente, você vai furá-lo todo com um garfo, para depois jogar a calda em cima, essa calda vai descer e o bolo vai absorver, ponha a calda com carinho.</li>
+                    <li>Cubra com coco ralado e corte em quadradinhos, então embrulhe em papel alumínio e leve à geladeira por pelo menos 4 horas. Então, me agradeça!</li>
+                </ol>
+            </section>
+
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            &copy; Gustavo Porfírio Lino dos Santos <a href="index.html">Voltar ao início</a>
+        </footer>
+
+    </div>
+
+    <!-- Carrega o JavaScript após todo o HTML -->
+    <script src="bolo.js"></script>
+
+</body>
+</html>
